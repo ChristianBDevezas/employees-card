@@ -1,0 +1,63 @@
+section.cards {
+    justify-content: center;
+    gap: 2rem 3rem;
+}
+
+.card__body__email i,
+.card__body__phone i,
+.card__body__linkedin i {
+    margin-right: 5px;
+}
+
+.card__body .remove {
+    padding: 7px 11px;
+    border-radius: 20px;
+    border: 1px solid var(--red-color);
+    background: transparent;
+    color: var(--red-color);
+    cursor: pointer;
+    transition: all .4s;
+}
+.card__body .remove:hover {
+    background: var(--red-color);
+    color: var(--white-color);
+}
+
+.card__body .card__btn {
+    background-color: transparent;
+    color: var(--white-color);
+    padding: 1px 0px;
+}
+.card__body .card__btn:hover {
+    color: var(--golden-color);
+    background-color: transparent;
+}
+
+.card__image {
+    position: absolute;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 194px;
+    height: 180px;
+    padding: 0px;
+    border-radius: 50%;
+    background: conic-gradient(
+        from var(--border-angle),
+        transparent 0deg 280deg,
+        white 320deg,
+        var(--grey-color) 345deg,
+        transparent 360deg
+    );
+    animation: card-border-run 1.8s linear infinite;
+}
+
+.card__image img {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: none;
+}
